@@ -1,0 +1,47 @@
+
+	<head>
+		<title>Burrow's cafe game</title>
+		<style>
+	#game-canvas {
+		width:896px;
+		height:512px;
+		background-color:#efefef;
+		/*
+		image-rendering: -moz-crisp-edges;
+		image-rendering: -webkit-crisp-edges;
+		image-rendering: pixelated;
+		background-image:url("./img/background.png");
+		background-size:contain;
+		*/
+		margin: auto;
+	}
+
+	.center {
+		margin:auto;
+		text-align:center;
+	}
+
+	p { 
+		user-select: none;
+	}
+	#game-div {
+		margin:auto;
+	}
+	
+		</style>
+
+	</head>
+	<body onload="init()">
+		
+		<p id="currentPeriod"></p>
+		<p id="currentApplianceHover">You are hovering over:</p>
+		<div class="center" id="game-div">
+			
+			<canvas width="512" height="256" id="game-canvas" ></canvas>
+			<h2 id="message">  </h2>
+		</div>
+		
+	<script src="main.js"></script>
+	<script src="data.js"></script>
+	<script src="util.js"></script>
+	</body>
